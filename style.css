@@ -1,0 +1,122 @@
+
+.txtmain{
+font-family: 'Orbitron', sans-serif;}
+
+.txtsec{
+font-family: 'Jura', sans-serif;}
+
+:root {
+--cmain : #2B9DF4
+}
+.blu{
+    color:#2B9DF4 ;
+}
+body{
+    background-color:black;
+    overflow-x: hidden;
+}
+
+.lunaUno{
+    background-image: url(./media/moon.jpg);
+    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)),linear-gradient(180deg, rgba(234, 234, 234, 0) 16%, rgba(255, 255, 255, 0) 70%, rgba(0,0,0,1) 95%), url(./media/moon.jpg);
+    background-size: cover;
+
+}
+.bottoncinoNav{
+    color: white;
+}
+
+.titolo{
+    font-size: 75px;
+}
+.sottotitolo{
+    font-size: 27px;
+}
+@media screen and (min-width: 400px){
+    .freccetta{
+    font-size: 60px;
+    position: absolute;
+    margin-left: 155px;
+    margin-top: 700px;
+    color: var(--cmain);
+    z-index: 100;
+}
+}
+@media screen and (min-width: 1600px){
+    .freccetta{
+    font-size: 60px;
+    position: absolute;
+    margin-left: 46%;
+    margin-top: 40%;
+    color: var(--cmain);
+}
+}
+
+.lunaDue{
+    background-image: url(./media/moon2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.dimensioneRet{
+    width: 20%;
+}
+
+.spaziatura{
+    margin-bottom: 250px;
+    margin-left: 100px;
+}
+
+.buttGo{
+    all:unset;
+    border: solid 2px var(--cmain);
+    border-radius: none;
+    height: 60px;
+    width: 150px;
+    position: relative;
+}
+.buttGo::before{
+    width: 110%;
+    height: 80%;
+    background-color: black;
+    position: absolute;
+    z-index: 101;
+    padding-top: 15px;
+    padding-left: 60px;
+    content: "Go To";
+    left: -10px;
+    bottom: 6px;
+    color: white;
+}
+
+.buttGo::after{
+    width: 90%;
+    height: 130%;
+    background-color: black;
+    position: absolute;
+    z-index: 100;
+    content: "";
+    left: 8px;
+    bottom: -9px;
+}
+.misureFoto{
+    width: 100vw;
+}
+.lineSotto{
+    width: 100%;
+    height: 8px;
+    background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 20%, rgba(43,157,244,1) 50%, rgba(0,0,0,1) 80%);
+
+
+
+}
+
+.fotoSotto{
+    background-image:linear-gradient(180deg, rgba(0,0,0,1) 20%, rgba(255,255,255,0) 50%, rgba(0,0,0,1) 80%),  url(./media/sunrise-1765027_1920.jpg);
+    background-position: center;
+    background-size: cover;
+width: 100%;
+height: 100vh;
+    
+}
